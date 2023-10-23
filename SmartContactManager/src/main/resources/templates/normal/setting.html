@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::Layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>Setting Page</title>
+</head>
+<body>
+	<section>
+	<div class="container">
+	<div class="row">
+	<div class="col-md-12">
+	<div class="card">
+	<div class="card-body">
+	<div class="text-center">
+	 <img style="width:150px" src="#" th:src=@{/images/ppassword-logo.png} alt="" /> 
+	</div>
+	<h3 class="my-3 text-center">Change Password</h3>
+	<form action="#" th:action="@{/user/change-password}" method="post" >
+	<!-- old password field -->
+	<div class="form-group">
+	<input type="password" name="oldpassword" class="form-control" placeholder="Enter old password" required="required" />
+	</div>
+	<!-- new password field -->
+	<div class="form-group">
+	<input type="password" name="newpassword" class="form-control" placeholder="Enter new password" required="required" />
+	</div>
+	<!-- button field -->
+	<div class="container text-center">
+	<button type="submit" class="btn btn-success">Change</button>
+	<button type="reset" class="btn btn-warning">Reset</button>
+	<br />
+	<div class="container mt-3">
+	</div>
+	</div>
+	</form>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	
+	
+	<!-- Dynamically fetch the data...  and color of sidebar-->
+<script>
+$(document).ready(()=>{
+	$('.item').removeClass('active');
+	$("#setting-link").addClass('active');
+});
+</script>
+	</section>
+</body>

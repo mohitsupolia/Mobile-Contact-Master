@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::Layout(~{::section})">
+<head>
+	<meta charset="UTF-8" />
+	<title>User Dashboard</title>
+</head>
+<body>
+<section>
+<div class="container mr-2 ml-2">
+<div class="card">
+<div class="card-body my-5">
+<div class="container text-center">
+<img src="" style="height: 200px; width: 200px;" class="my_profile_picture" th:src="@{'/images/'+contact_logo.png}" alt="Profile Photo" />
+</div>
+
+<h1 class="text-center mt-3 font-italic text-secondary font-weight-light">
+Start Adding your contact on cloud....
+</h1>
+<a th:href="@{/user/add-contact}" type="submit"  class="btn btn-primary mt-4 btn-block text-uppercase">Add new contact</a>
+
+
+</div>
+</div>
+</div>
+<!-- Dynamically fetch the data...  and color of sidebar-->
+<script>
+$(document).ready(()=>{
+	$('.item').removeClass('active');
+	$("#home-link").addClass('active');
+});
+
+</script>
+
+</section>
+</body>
+</html>
