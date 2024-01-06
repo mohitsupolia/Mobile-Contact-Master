@@ -33,7 +33,7 @@ Step 7: Create the Controller in `src/main/java`.
 
 Step 8: Start the Server.
 
-Step 8: Open the Browser and navigate to http://localhost:8080
+Step 9: Open the Browser and navigate to http://localhost:8080
 
 ## Usage
 1. Safely add sensitive contact information with robust security measures to protect user data.
